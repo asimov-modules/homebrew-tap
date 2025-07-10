@@ -1,8 +1,8 @@
 class AsimovImapModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-imap-module"
-  url "https://github.com/asimov-modules/asimov-imap-module/archive/refs/tags/0.0.0.tar.gz"
-  sha256 "a88fb6170685243d315cf9b443b6551807826248f3e1c22631daaaced55258e5"
+  url "https://github.com/asimov-modules/asimov-imap-module/archive/refs/tags/0.0.1.tar.gz"
+  sha256 "65193dcdd4a6acd35d52c6009b137747a0e11cffbdca95ec8d21e36a392a688a"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-imap-module.git", branch: "master"
 
