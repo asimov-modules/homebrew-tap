@@ -11,6 +11,14 @@ class AsimovImapModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3508f5b71825c376efcec2e23338cf67581f588165414c5ce5e48c3affccce2e"
+    sha256 cellar: :any_skip_relocation, ventura:       "97fab5090c57ff87fb97d658c849f0d3d60179ec6c848d5197714099dced57f8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c4c2c111fbb7545bdf7f4a7d1785f9964058d7d12fca5672d2bf6cca0d54d8fb"
+  end
+
   depends_on "rust" => :build
 
   def install
