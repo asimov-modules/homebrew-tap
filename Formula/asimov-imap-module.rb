@@ -1,8 +1,8 @@
 class AsimovImapModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-imap-module"
-  url "https://github.com/asimov-modules/asimov-imap-module/archive/refs/tags/0.1.2.tar.gz"
-  sha256 "3683f8b8951e884d794256bad1e4de56520f9b9dfca926137b843a18f32d4005"
+  url "https://github.com/asimov-modules/asimov-imap-module/archive/refs/tags/0.1.3.tar.gz"
+  sha256 "59744a2c1a1d0657ea63e742dbf51f95fb43fe6d46e8c79bcc6a6356607de456"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-imap-module.git", branch: "master"
 
@@ -13,9 +13,9 @@ class AsimovImapModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2a251f02baf2b3d7f9a135478449e29b52c13224183c1de74092cf3fbbee96eb"
-    sha256 cellar: :any_skip_relocation, ventura:       "730af2d37e54d33a73fb27ccb9e2e55358e16fbc7b4372ffece66ff0cfd5c6ab"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "83100924b17889d8f4024a84df1e37b3573dde125a8af30ad9887495747ced6e"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5f4cd09b5090999edd18a7c5da1bda6e3c55f259f8881b10a9258b4b1b436d76"
+    sha256 cellar: :any_skip_relocation, ventura:       "58fe9651d2f99ffb875449f36f27fc20e49abe1c921d4ff705aadce2d96e43a6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6b7f2088b64cfd79ec3d1f6702328c38d2e5f31803adaeff935573aaac5d08ba"
   end
 
   depends_on "rust" => :build
