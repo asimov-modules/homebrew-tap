@@ -1,8 +1,8 @@
 class AsimovMboxModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-mbox-module"
-  url "https://github.com/asimov-modules/asimov-mbox-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "b56de8db20b70e920c2951bda05f6a78190528d061b4ae055c356ef2e7353875"
+  url "https://github.com/asimov-modules/asimov-mbox-module/archive/refs/tags/0.1.0.tar.gz"
+  sha256 "e28a05870251a4a2df5254e22595b0d951f49dfd3debbc8156c337e550b25c46"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-mbox-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovMboxModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "00d1989707c0199e495b1500694b735cfe3ddff038e3d36410b61d43fc0e0a65"
-    sha256 cellar: :any_skip_relocation, ventura:       "8ff62c9e669e354c1f897abdadd9ac8147adf0461b7a6be58fbda6b1bc10ba07"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "24db52bdf7c73c1c89f934842dffaf639702311b6a87012c07db4c2f6806940c"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "aec76714b58294752347f95cc5c48df07ba4553bf116abb4bf1298119395eb84"
+    sha256 cellar: :any_skip_relocation, ventura:       "09cdcbe4d26ccca98a282a37264f47f6801587555227637b09f72ce73b1fb658"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "71e211b8fbea72af564f70bd1addfb7f6f074a8cb0590d3f582cb5e6ab885c9f"
   end
 
   depends_on "rust" => :build
