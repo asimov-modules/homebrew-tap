@@ -11,6 +11,14 @@ class AsimovJinjaModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3d5caa24d65921f03d0cf1a5aea221a8a9b41696955b0fba070021c296494a69"
+    sha256 cellar: :any_skip_relocation, ventura:       "33927ef9ae6c90679f4d7420a88f014feac39b523040b115f337213a2d8e2f1d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1414e3012dad553646997507679c388d0af4b76f62514d8cd0083536fd42bd02"
+  end
+
   depends_on "rust" => :build
 
   def install
