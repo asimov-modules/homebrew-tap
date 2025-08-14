@@ -11,10 +11,10 @@ class AsimovTelegramModule < Formula
     strategy :github_latest
   end
 
-  depends_on "rust" => :build
   depends_on "openssl@3" => :build
-  depends_on "zlib" => :build
   depends_on "llvm" => :build if OS.linux?
+  depends_on "rust" => :build
+  depends_on "zlib" => :build
 
   def install
     system "cargo", "install", *std_cargo_args
