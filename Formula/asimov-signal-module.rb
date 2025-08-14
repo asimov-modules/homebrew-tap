@@ -19,8 +19,8 @@ class AsimovSignalModule < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "38e99411f9b05c3bdc5125d26079c0fb6c9cd8ff054d72d3955847471f9c249b"
   end
 
-  depends_on "rust" => :build
   depends_on "openssl" => :build
+  depends_on "rust" => :build
 
   def install
     system "cargo", "install", *std_cargo_args
