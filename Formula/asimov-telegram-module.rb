@@ -17,6 +17,8 @@ class AsimovTelegramModule < Formula
   depends_on "zlib" => :build
 
   def install
+    ENV.append_to_rustflags "-C link-arg=-L/usr/lib/x86_64-linux-gnu" if OS.linux?
+
     system "cargo", "install", "-vv", *std_cargo_args
   end
 
