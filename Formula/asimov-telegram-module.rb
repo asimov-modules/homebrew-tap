@@ -2,7 +2,7 @@ class AsimovTelegramModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-telegram-module"
   url "https://github.com/asimov-modules/asimov-telegram-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "9f1c5b4b8fa6eb112b987efd4013bc6ba081bbe62a9cb649dde69b333d3ba57f"
+  sha256 "bbc0b9b1d06eff756868854c07e5757d1046806182972c2fe6e6fb840318db29"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-telegram-module.git", branch: "master"
 
