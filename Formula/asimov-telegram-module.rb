@@ -17,7 +17,7 @@ class AsimovTelegramModule < Formula
   depends_on "zlib" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install", "-vv", *std_cargo_args
   end
 
   test do
