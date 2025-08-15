@@ -17,6 +17,7 @@ class AsimovTelegramModule < Formula
 
   def install
     ENV["RUSTFLAGS"] = "-L /usr/lib/x86_64-linux-gnu" if OS.linux?
+    system "apt-get", "install", "-y", "libc++-dev", "libc++abi-dev"
     system "cargo", "install", "-vv", *std_cargo_args
   end
 
