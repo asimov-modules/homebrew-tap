@@ -16,8 +16,11 @@ class AsimovTelegramModule < Formula
   depends_on "zlib" => :build
 
   def install
-    ENV["RUSTFLAGS"] = "-L /usr/lib/x86_64-linux-gnu" if OS.linux?
-    system "apt-get", "install", "-y", "libc++-dev", "libc++abi-dev"
+    if OS.linux?
+      ENV["RUSTFLAGS"] = "-L /usr/lib/x86_64-linux-gnu"
+      system "apt-get", "install", "-y", "libc++-dev", "libc++abi-dev"
+    end
+
     system "cargo", "install", "-vv", *std_cargo_args
   end
 
