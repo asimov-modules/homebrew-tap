@@ -6,10 +6,10 @@ class AsimovTelegramModule < Formula
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-telegram-module.git", branch: "master"
 
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
+  # livecheck do
+  #   url :stable
+  #   strategy :github_latest
+  # end
 
   depends_on "llvm" => :build if OS.linux?
   depends_on "openssl@3" => :build
