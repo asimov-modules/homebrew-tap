@@ -11,14 +11,12 @@ class AsimovTelegramModule < Formula
   #   strategy :github_latest
   # end
 
-  depends_on "llvm" => :build if OS.linux?
   depends_on "openssl@3" => :build
   depends_on "rust" => :build
   depends_on "zlib" => :build
 
   def install
-    ENV.append_to_rustflags "-L /usr/lib/x86_64-linux-gnu" if OS.linux?
-
+    ENV["RUSTFLAGS"] = "-L /usr/lib/x86_64-linux-gnu" if OS.linux?
     system "cargo", "install", "-vv", *std_cargo_args
   end
 
