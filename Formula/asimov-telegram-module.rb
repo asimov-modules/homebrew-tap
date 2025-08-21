@@ -28,6 +28,14 @@ class AsimovTelegramModule < Formula
       ENV["RUSTFLAGS"] = "-L /usr/lib/x86_64-linux-gnu"
       system "sudo", "apt-get", "install", "-y", "libc++-dev", "libc++abi-dev"
     end
+
+    # Pass the environment variables through
+    env_vars = ENV.select { |key, _| key.start_with?("HOMEBREW_ENV_VAR_") }
+    env_vars.each do |key, value|
+      arg_name = key.sub(/^HOMEBREW_ENV_VAR_/, "")
+      ENV[arg_name] = value
+      ohai "Setting #{arg_name} = #{value}"
+    end
     
     system "cargo", "install", *std_cargo_args
   end
