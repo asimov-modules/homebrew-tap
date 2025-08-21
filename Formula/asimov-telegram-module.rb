@@ -1,8 +1,8 @@
 class AsimovTelegramModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-telegram-module"
-  url "https://github.com/asimov-modules/asimov-telegram-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "ac79b730ec72cd8adcd740d1f8bc1dc094feef49a480076d08a9122d60cf4842"
+  url "https://github.com/asimov-modules/asimov-telegram-module/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "b15cc4c3b971d46b08ffab8996356346a8dc27eefa1898147403af0ad37f54a6"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-telegram-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovTelegramModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256                               arm64_sequoia: "0e33c87d5a151c722180952e277489ae52d944eb73b8ecb27fb98ec8065e711b"
-    sha256 cellar: :any_skip_relocation, ventura:       "55d4a9341e8f7da3455c9d60fe0d7762dbfc73fe02ceed89896226cd3c83cc33"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "885840e11a44cfc35c5e76e01eed0f9c3aba5f4609c9ff1c40fa957b0a557c6a"
+    sha256                               arm64_sequoia: "31c05165e84e2711c1e2c15039ca904acf301a925b66a09590a906dd4cfb3f24"
+    sha256 cellar: :any_skip_relocation, ventura:       "9c25de413dcd8c3b89c0e15861489f1f815200e69fe195749221b1f27a388f9b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "86c3848d49439b961d765b586b84ad068982b146d9032d6dfb1c22eea00ff9ac"
   end
 
   depends_on "openssl@3" => :build
