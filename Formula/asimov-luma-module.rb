@@ -1,8 +1,8 @@
 class AsimovLumaModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-luma-module"
-  url "https://github.com/asimov-modules/asimov-luma-module/archive/refs/tags/0.1.0.tar.gz"
-  sha256 "7bc8b3c0447ab20d313d2de6cf3dbddcec9eb52aa63064242e3073543168449b"
+  url "https://github.com/asimov-modules/asimov-luma-module/archive/refs/tags/0.1.1.tar.gz"
+  sha256 "1f991edfb5148f30d313d75de2fe38feedb91ae5faf63d747d0872965ad55347"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-luma-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovLumaModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0f0651439313f46e7992bd88fb5224308fe7ce1fe586e3c3762d8312f066d26f"
-    sha256 cellar: :any_skip_relocation, ventura:       "07aa56f4634b8d1a303769edc5801aa1afdeece5dc4d4acb5c0422006af16fba"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a287dc90b37e869c6d5477c18ea051f6f9cadeff15eba7aa490a44ec26dbbe27"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e7988edcc60b9b9ffb46b3f8ac29d1429d14363a182cccc4ba8bf601de1bb779"
+    sha256 cellar: :any_skip_relocation, ventura:       "6202cff7d9c55383ab63853b323d7a36dc564226954585d0a339c38e179e1d20"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6297db99b9db576489e131d9672eebbd962513b61c9e7261088c6cd4a59e2665"
   end
 
   depends_on "rust" => :build
