@@ -11,6 +11,14 @@ class AsimovXModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6af20164dc080cb3d992e6438860e76f6b9997780289bd17dfc347cfbc43327d"
+    sha256 cellar: :any_skip_relocation, ventura:       "da9c800a3a8a04d0584d72169bb7aa0b6b7978b64ffe0aa0fb746d6406c42663"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fe4dcef2809336104cb775a3e70e4c44e6f3da7c9cecb92dad6dafe05b0daff2"
+  end
+
   depends_on "rust" => :build
 
   def install
