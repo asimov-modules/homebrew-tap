@@ -11,6 +11,14 @@ class AsimovFtpModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bc1487ba6ad6b0ca863763f43334be6af1a1e19a8f24e3754e3cdadcae085013"
+    sha256 cellar: :any_skip_relocation, ventura:       "963dfe02cabffd123c2d7ae620158c77c792f4b702c1af35ee281b70c18dc23c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d95a7fd1eff311fecd4cc5fb4cb1d25f05642de88f5c560e125c0e2e0be0d4e7"
+  end
+
   depends_on "rust" => :build
 
   def install
