@@ -11,6 +11,14 @@ class AsimovSerpapiModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ae22922b1f530e4e03e21630321c4743963c9a969bce6ee6c83edc7acc339a94"
+    sha256 cellar: :any_skip_relocation, ventura:       "d1af1e3a8aebeaa7b0d508236a2a988340d673759d7b21bc7176bea0bb4d735a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a00430ddb7f0dc90df46adef3a7454aa7966779ef5e1160c8a745ca0fc7967b9"
+  end
+
   depends_on "rust" => :build
 
   def install
