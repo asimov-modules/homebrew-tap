@@ -13,9 +13,9 @@ class AsimovSignalModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    sha256 cellar: :any,                 arm64_sequoia: "79a334a12b178ffa401984f01e260691b129c6860f69d03fd405238475e4aa46"
-    sha256 cellar: :any,                 ventura:       "e4c319976c823f1d334bdaee571d8e245294fb1da7dae17e0b09145daf4bc38f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "25f9e649cc9e9eb182659cc91009fae3cd5e4842b8bbc1cf25888b7322ba12de"
+    sha256 cellar: :any,                 arm64_sequoia: "86d9e211ad39d11d9550f4c316a545b3bb0784c26bfc47926794e43a6989aacb"
+    sha256 cellar: :any,                 ventura:       "97fa8b120a343155626b9265a450d6ce889f593c141d1edb29fe452ee98dc4fc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cb0675a882f8bb8515dfbb480de2f88211711229562605c614fb36bcb59cf0cc"
   end
 
   depends_on "openssl" => :build
