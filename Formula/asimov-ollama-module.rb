@@ -2,7 +2,7 @@ class AsimovOllamaModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-ollama-module"
   url "https://github.com/asimov-modules/asimov-ollama-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "e4f14c4596c4860fd6d59af70eb8106868c2fd29fc66e2a1b3656eeb13dbcec1"
+  sha256 "828b574298ca97b7f994abe3648f05482789f1ccc872723d367341be2d607577"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-ollama-module.git", branch: "master"
 
