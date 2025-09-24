@@ -2,7 +2,7 @@ class AsimovMlxModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-mlx-module"
   url "https://github.com/asimov-modules/asimov-mlx-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "534c9f623b848c339ca9a7b868db7681cf3ed3be96eddcb5a436d4ac35347a6b"
+  sha256 "856f80b817fde1eeb36cd469b6147d64ef526792cd7f6073c1866a21e7e4b081"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-mlx-module.git", branch: "master"
 
