@@ -1,8 +1,8 @@
 class AsimovOpenaiModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-openai-module"
-  url "https://github.com/asimov-modules/asimov-openai-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "cc17eab9b0e4182652fa53c2df454521733df99196497e9a84b5c5846d8f555d"
+  url "https://github.com/asimov-modules/asimov-openai-module/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "2617e567668eadadd71c0db0419731be3b1c706e09061258fe636047a7244c61"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-openai-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovOpenaiModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bfaada852690dcb5592c82652150b10c4dd66babcb7d4374c39e47e12df3ca7b"
-    sha256 cellar: :any_skip_relocation, sequoia:       "5d1b240817d734d96027272a45ed2a36c3874594ac872ddf43ff62a209f8df1d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6ccb527ccd55cb5c90e92e65174a4a3f9dce45cb2d501425d90306e0d0c8e788"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "916b6bb19b382f59e5355c91948bb3b8b7d34608e70afa06ac612d3298690de2"
+    sha256 cellar: :any_skip_relocation, sequoia:       "a974efcd907e1776dffbea47455d08e6c74f044ba407313aaa7232afd59f7e37"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e9398cfb070c03f1dbd5d426a83ea1bdb46f41cf7e8aeb724539fce96c27f7ad"
   end
 
   depends_on "rust" => :build
