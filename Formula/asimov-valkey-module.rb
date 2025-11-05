@@ -11,6 +11,14 @@ class AsimovValkeyModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "48cda92d457bcb6a5e98dc25761c583e1bb2c623108366d44823e7bbc3c2c8bb"
+    sha256 cellar: :any_skip_relocation, sequoia:       "31f5d2f3533c2568a723147bf2ab517b8989b0771561cfef228c10ba7b33c105"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4c315c7a6620bf68d1370473b57f71d13b2029f1bafb9e5d20044ba05c6da126"
+  end
+
   depends_on "rust" => :build
 
   def install
