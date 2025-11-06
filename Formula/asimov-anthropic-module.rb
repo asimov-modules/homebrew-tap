@@ -1,8 +1,8 @@
 class AsimovAnthropicModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-anthropic-module"
-  url "https://github.com/asimov-modules/asimov-anthropic-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "562eb7ab29bb1d1cdba636e17db2d48337be6a8badcbe6a6d7c68d0575c7c732"
+  url "https://github.com/asimov-modules/asimov-anthropic-module/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "66807a297ee9ab92702dd644ecb8dfad87ce9882e0f0d54c92671e268e45568d"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-anthropic-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovAnthropicModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0398cd4e0e4632832a85d4a42da99bcfe68b8c1223357204655477183d2df2fe"
-    sha256 cellar: :any_skip_relocation, sequoia:       "d04795c04e55691934082b4501b0085c9a1c498567ab746d36f782440d5b7863"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "22e5c6f3f50bcb301d0c4d126f09dae8af2f3229018d442b35f5e1dd637bab71"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6b8abb0858ce516aa641834549d0c5c5c93e7b38feb052e71065b6bc3709ad85"
+    sha256 cellar: :any_skip_relocation, sequoia:       "63a64e42330b6538c98f694d3c4b6db3e337008caa26a4afc9ddd140157f63c8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "091a56d65adfb03d67ee091559ef395fb9b3d815339e16bcca96253c3a929f7b"
   end
 
   depends_on "rust" => :build
