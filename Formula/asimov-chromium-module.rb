@@ -1,8 +1,8 @@
 class AsimovChromiumModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-chromium-module"
-  url "https://github.com/asimov-modules/asimov-chromium-module/archive/refs/tags/0.1.2.tar.gz"
-  sha256 "feb4ac1f9ae33af3fbdcc416aca63de5f473972a0e9df8922f48896f905bb450"
+  url "https://github.com/asimov-modules/asimov-chromium-module/archive/refs/tags/0.1.3.tar.gz"
+  sha256 "f13a79709e13782c58b6d9330dc5854d64883e0967893e1e58683c368b04514f"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-chromium-module.git", branch: "master"
 
@@ -13,9 +13,9 @@ class AsimovChromiumModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "25bf0bb94471ce2ad952481a9a1ee12222eea1d5ec5b9b686b0b985c1b054168"
-    sha256 cellar: :any_skip_relocation, ventura:       "efc3432f786b6b3b652dc7e5b1733008e1ebc4c9f1ee95dc5d7a633b6eeecff1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "890bb5b570ef5abf7cfe0a03079958562d5f3805d86c1a9523b0149137611ee4"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "60f3ceb86bb5674fb4b044fa0ae8af376df9a8454b933302159ee888f2ecd037"
+    sha256 cellar: :any_skip_relocation, sequoia:       "a667e841b5767b8cc0b41d6a3c78e6994424fb2e1bbb01ae19a0c04ef7dea369"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "22c2d4332204db3633147502ab482fb4a0b99683d2fb0046da7ec01577f2de67"
   end
 
   depends_on "rust" => :build
