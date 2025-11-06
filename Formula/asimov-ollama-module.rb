@@ -1,8 +1,8 @@
 class AsimovOllamaModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-ollama-module"
-  url "https://github.com/asimov-modules/asimov-ollama-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "828b574298ca97b7f994abe3648f05482789f1ccc872723d367341be2d607577"
+  url "https://github.com/asimov-modules/asimov-ollama-module/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "dbc1e3a3107c6829e95e5fad1d651b5add23f9de8c27d5f798bd1d61d9c6b38c"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-ollama-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovOllamaModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1c0417e431148f12a77c962518dc291694fdb8f4dcad66062fedce5eb1fde1b2"
-    sha256 cellar: :any_skip_relocation, sequoia:       "e85c6005057fa4e8eefd294b19a951491f13a68ae2a8e29c8056bc9c087a4057"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "26646095c07c7b51a0db6a3610b1953bacc0b0cd1b52be269b5f85fe28f2a87c"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "904d0aa738538e2363b68acc61a8f1874ecb5c891d00c7a7c30598ca497d4e7b"
+    sha256 cellar: :any_skip_relocation, sequoia:       "444fcfc945c4887ef89888b6dd6b7bd8fde8608c4244afd1a37ceec0ec7d1f86"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c153454af149690a719762bc59b9952d46964ea18e2141e0415404c60b0533d"
   end
 
   depends_on "rust" => :build
