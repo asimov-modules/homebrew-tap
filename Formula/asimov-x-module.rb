@@ -1,8 +1,8 @@
 class AsimovXModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-x-module"
-  url "https://github.com/asimov-modules/asimov-x-module/archive/refs/tags/v0.2.3.tar.gz"
-  sha256 "5655d7e2db5c2ab2e2a8faa4e7378c05ce69b3905c6a031c7d42009eddcf125f"
+  url "https://github.com/asimov-modules/asimov-x-module/archive/refs/tags/0.2.4.tar.gz"
+  sha256 "06990b56e04f81b4f604df428694806ee593d41373d6a5b770e1cd63d1a27ec2"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-x-module.git", branch: "master"
 
@@ -13,9 +13,9 @@ class AsimovXModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bc71b7373eec1199638ac25ec5633fba2fe5a127e656e87bbee9642b866a2bcd"
-    sha256 cellar: :any_skip_relocation, ventura:       "f63380f1a5111096af0d0a58819228123193fce3093f84c7e4bb2abc9fa0c3e0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e7a3af8c29062fb71c2b642f09992d4a01c18a323bd1e55864d2a865c1c3ff6d"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f669ae67ccc2eca3016a9a6e5abacad25ec1208e09d4c960e28d011d16a061b9"
+    sha256 cellar: :any_skip_relocation, sequoia:       "c5a43bbcedf4828c8ff06924c4bf77b4dcf9878433f9ff3bf1b6bc9834ebacab"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "41b92c5467e675ec8bc0f53f3197254a48b1027105a412b1186414b923a3675c"
   end
 
   depends_on "rust" => :build
