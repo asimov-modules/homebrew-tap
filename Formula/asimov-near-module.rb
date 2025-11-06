@@ -1,8 +1,8 @@
 class AsimovNearModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-near-module"
-  url "https://github.com/asimov-modules/asimov-near-module/archive/refs/tags/0.0.3.tar.gz"
-  sha256 "a53cb4d9acf3c515ebf8c20c2ef42edb742a7ee9c547e56ce2844ee9930b7531"
+  url "https://github.com/asimov-modules/asimov-near-module/archive/refs/tags/0.0.4.tar.gz"
+  sha256 "ec160f7f5f47c6eb434379dc4cb44e7a60eb5775557cb75eda79899e81f547f6"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-near-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovNearModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "def01d8482dad21631679fe9dd8fe71dee50a6bcfbaadf185253913234c59147"
-    sha256 cellar: :any_skip_relocation, ventura:       "10ed07035b445557c283d9a8b1d57da68681353b2ff7c0088f1b307bb50c2c7d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ddf8e4f6f40d5d5f4756f5dd65c36881e52c0174646915843d2c62cd51641f11"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "d64906086a5b099780964ad75f6fb758dd571f590f9c39ce23bca8c79ed41cd3"
+    sha256 cellar: :any_skip_relocation, sequoia:       "2ae4e3aac3965d830ca5b54e87d88af1d709ace07feeaaed93ba5ea084b5a0b7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b2a71069ae248f9a67acfc84a7e9fdc46947a8b4b41a75e7a062a1fa8fdee6a6"
   end
 
   depends_on "rust" => :build
