@@ -1,8 +1,8 @@
 class AsimovBrightdataModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-brightdata-module"
-  url "https://github.com/asimov-modules/asimov-brightdata-module/archive/refs/tags/0.0.6.tar.gz"
-  sha256 "6a8a5da931ae7bbdbcd55fbd8fd3f916e6fc16cd3528516e6f2bc293e5c93eb2"
+  url "https://github.com/asimov-modules/asimov-brightdata-module/archive/refs/tags/0.0.7.tar.gz"
+  sha256 "73374696aa39bac79fb7b52c9970c847a5908d4ad3ed0cde43f7a14d62dbb341"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-brightdata-module.git", branch: "master"
 
@@ -13,9 +13,9 @@ class AsimovBrightdataModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f5d6096ace99decc78fc6fbf4b86ef16d86602789de069b0d31514bfe786acdd"
-    sha256 cellar: :any_skip_relocation, sequoia:       "de122b125910794ebd07157c21173447afb899ee6469e88bb49403968eea9a4e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9891ecfb61f9bfb206e35c104fe081e47ad98b80c67afa119dbfe2fbf65997a8"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8ffc2f30ae0ebb42f04662d4c462b68551f09794b97eab483571f0912d65d8a9"
+    sha256 cellar: :any_skip_relocation, sequoia:       "4af3fc8974a42f4b15f959f51590e888bbc1ff4bd0e5bc9150566ea1c1dc7800"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c12f9886bbadad5660f1773fdb6d5d3a431e458433277d1c3a9417c203115703"
   end
 
   depends_on "rust" => :build
