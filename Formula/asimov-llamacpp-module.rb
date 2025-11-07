@@ -13,10 +13,10 @@ class AsimovLlamacppModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "89e32c16a36d284bbb67f494084bfd8f166d6155276dfc46cd35a0bb05a8009b"
-    sha256 cellar: :any_skip_relocation, sequoia:       "1e0b1d511c838fe5fcf295d69eb9be86080ec626a50d7a7c4d131047504f02c8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f543da1daa746704b6b588c0dfb06250ce33fc5e7f09a448bbff4f063505dc24"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "99317b4b8c64dc24e4f190f889a98f3feb393be243976b88b209261c71775436"
+    sha256 cellar: :any_skip_relocation, sequoia:       "f7762d3692dc44ed3c635293c61c79faf7c901a953a026796d51be334d5737c7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "37a8a4dd007eea5982c27de9812aa17d606501e32d0487ef4fd19c20c7b9e801"
   end
 
   depends_on "rust" => :build
