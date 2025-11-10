@@ -11,6 +11,14 @@ class AsimovImageModule < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/asimov-modules/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "de8c4f0a48582873f15023bc0513e22fec769652160d1ba0f8a0ce3342c56d4f"
+    sha256 cellar: :any_skip_relocation, sequoia:       "1d34eb5129ed62fce9021df1b0ad3fa3768f45404c7f8e61c1a2496d9a6405f7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b296e669a2d460b956f1c8b095be0f2ea0846f96eb01473992ff2cf452a211c7"
+  end
+
   depends_on "rust" => :build
 
   def install
