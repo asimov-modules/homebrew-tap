@@ -2,7 +2,7 @@ class AsimovImageModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-image-module"
   url "https://github.com/asimov-modules/asimov-image-module/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "bb43d67e3703f14d8da59c3ce693599acf97654444eb3b8a059cefecdf049deb"
+  sha256 "5a91c981fc273bb1afc2cb4bba7cf021e90e1905e24880e234c459e768e8ff77"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-image-module.git", branch: "master"
 
