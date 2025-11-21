@@ -13,10 +13,10 @@ class AsimovImageModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f784c5349fdb6b6bf124ad796a7836070ff239a1d419fd39f4e5f209a71ecbfa"
-    sha256 cellar: :any_skip_relocation, sequoia:       "063c87f413ae78afcf4d2f6f6cdb6329e8ae95e0235476ad42b1ca90f26adc48"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5b923673c95106341c2063f129d3e4f3243fae13b06e529b3de09ccd0588abe7"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8811edc7c283cf13263d0dcc8f044b8efab37225f433f2b2c02048ee0dd0bb00"
+    sha256 cellar: :any_skip_relocation, sequoia:       "f8904e6e48fac3b52debb5179ecc5fbf1fb7a87c86a468e06607787ce69258b3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a4e90b33461da278dc2a515353d6975ca052a2c065560be944eb360db84374cd"
   end
 
   depends_on "rust" => :build
