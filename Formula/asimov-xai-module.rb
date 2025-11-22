@@ -1,8 +1,8 @@
 class AsimovXaiModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-xai-module"
-  url "https://github.com/asimov-modules/asimov-xai-module/archive/refs/tags/0.0.2.tar.gz"
-  sha256 "30294d4ad525eafff230c5f3e49b873746fa1e8c61f5f01b09b360c3ff0b3121"
+  url "https://github.com/asimov-modules/asimov-xai-module/archive/refs/tags/0.0.3.tar.gz"
+  sha256 "2125c04b76680336cb1a0c343b53c7d64adbbbe45a0bb0d4cb9b59552ce32b62"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-xai-module.git", branch: "master"
 
@@ -13,9 +13,9 @@ class AsimovXaiModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e1ebb0b0dab39c3975cb91e37d85550e5ecda945f9f4524f1a5b5f4e5ef51d23"
-    sha256 cellar: :any_skip_relocation, sequoia:       "ba60daaf10a19783e1306f5c45efc9ed9750b3131cf4c814f1f3b9d39b7a280f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "288742ee1fddb8014606054b8478f2bc5cd983003a31375a161383e0d415517d"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e4735c68c1361adfe49e7f75fd8bc0e04f82642ecedfcbb5936bc8febbf71866"
+    sha256 cellar: :any_skip_relocation, sequoia:       "3e0d6af7a36bed9df2feed024f67e40307e8f3c567333b39a33336aedc493222"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "75e7f408ae8ea6c317b2641c6c3cda6e64789185b4bcf93786ba6ed6f5dc3c94"
   end
 
   depends_on "rust" => :build
