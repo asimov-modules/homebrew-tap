@@ -1,8 +1,8 @@
 class AsimovImageModule < Formula
   desc "To Be Filled"
   homepage "https://github.com/asimov-modules/asimov-image-module"
-  url "https://github.com/asimov-modules/asimov-image-module/archive/refs/tags/0.0.2.tar.gz"
-  sha256 "2be6166b08c22fcec77cc62511592a947624be1dba1ef831899e32ba7e1792a5"
+  url "https://github.com/asimov-modules/asimov-image-module/archive/refs/tags/0.1.0.tar.gz"
+  sha256 "149b6df8c01fdcb15724c95f640d26080f41771e200f0dfc8715c57e4b00566c"
   license "Unlicense"
   head "https://github.com/asimov-modules/asimov-image-module.git", branch: "master"
 
@@ -13,10 +13,9 @@ class AsimovImageModule < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/asimov-modules/tap"
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8811edc7c283cf13263d0dcc8f044b8efab37225f433f2b2c02048ee0dd0bb00"
-    sha256 cellar: :any_skip_relocation, sequoia:       "f8904e6e48fac3b52debb5179ecc5fbf1fb7a87c86a468e06607787ce69258b3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a4e90b33461da278dc2a515353d6975ca052a2c065560be944eb360db84374cd"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "87f47619271da43fd47ed5267f0be5b27811f8e80c9efcff8f7b0590b9487e85"
+    sha256 cellar: :any_skip_relocation, sequoia:       "ec5e75a513da1933bffc4c7a48110e49f164ff2220cd4f829ed9f8c1bb2d0240"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f2ad08c44496e51932f7dcbefb66a09aa3a5afcb1877c556031a4471a5b199d1"
   end
 
   depends_on "rust" => :build
